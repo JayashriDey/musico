@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu@&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy:ital@1&display=swap');
+body{
+    background-color: antiquewhite;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#toggle{
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 50px;
+    left: -180px;
+    cursor: pointer;
+    border-radius: 160px;
+    background: white;
+    transition: 0.5s;
+    box-shadow: inset 0 8px 60px rgba(0,0,0,0.1),
+                inset 0 8px 8px rgba(0,0,0,0.1),
+                inset 0 -8px -8px rgba(0,0,0,0.1);
+}
+#toggle .indicator{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(to bottom,rgb(22, 21, 21),white);
+    border-radius: 50%;
+    scale: 0.9;
+    transition: 0.5s;
+}
+#toggle.active .indicator{
+    left: 30px;
+}
+body.active{
+    background: black;
+}
+nav{
+    font-family: 'Poltawski+Nowy:ital', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+nav ul{
+    display: flex;
+    align-self: center;
+    list-style-type: none;
+    height: 80px;
+    background-color: black;
+    color: white;
+}
+.brand img{
+    width:180px;
+    margin: auto;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+
+}
+li {
+    display: list-item;
+    text-align:center;
+    font-size: 2em;
+    padding: 0 12px;
+}
+.logo{
+    padding: 10px 1px;
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.hm{
+    padding: 0 200px;
+}
+.ab{
+    padding: 0 80px;
+}
+.w{
+    padding: 0 140px;
+}
+h3 {
+    display: block;
+    font-size: 2.17em;
+    margin-block-start: 1em;
+    margin-inline-start: 200px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.container{
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('bg.jpg');
+}
+.container2{
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 50%;
+    border-radius: 12px;
+    padding: 60px 200px;
+    background-image: url('bg2.jpg');
+}
+
+.bottom{
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     
+}
+.icons{
+    margin-top: 14px; 
+}
+.icons i{
+    cursor: pointer;
+}
+#myprogressbar{
+    width: 80vw;
+    text-align: center;
+}
+.songItemContainer{
+    margin-top: 74px;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+h1 {
+    font-size: 3em;
+    font-family: 'Poltawski+Nowy:ital', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a:-webkit-any-link {
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#icon{
+    width: 60px;
+    height: 50px;
+    cursor: pointer;
+    padding: 10px 0;
+}
+#icon{
+    padding: 10px 190px;
+    width: 30px;
+    height: 30px;
+    left: 100px;
+}
+.B{
+    border-radius: 10px;
+    height: 260px;
+    width: 200px;
+    cursor: pointer;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    background-image: url('bg3.jpg');
+}
+.Ben{
+    border-radius: 10px;
+    height: 260px;
+    width: 200px;
+    margin-left: 500px;
+    cursor: pointer;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    background-image: url('bg4.jpg');
+}
+.Eng{
+    border-radius: 10px;
+    height: 260px;
+    width: 200px;
+    margin-top: 400px;
+    margin-left: -900px;
+    cursor: pointer;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    background-image: url('bg5.jpg');
+}
+.G{
+    border-radius: 10px;
+    height: 260px;
+    width: 200px;
+    margin-top: 400px;
+    margin-left: 500px;
+    cursor: pointer;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    background-image: url('bg6.jpg');
+}
